@@ -1,0 +1,22 @@
+body {
+  margin-top: 70px;
+  background: #333;
+  color: #fff;
+}
+
+@media(min-width: 576px) {
+  .left-converter {
+    padding-right: 0;
+  }
+  .right-converter {
+    padding-left: 0;
+  }
+  .left-converter input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .right-converter select {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

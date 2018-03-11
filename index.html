@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Expanded and improved from the original by Traversy Media
+  https://www.youtube.com/watch?v=7l-ZAuU8TXc
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weight Converter</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="text-center mb-4">Weight Converter</h1>
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm left-converter">
+                <input id="inputValue" type="number" class="form-control form-control-lg" placeholder="Enter grams...">
+              </div>
+              <div class="col-sm right-converter">
+                <select id="inputUnit" class="form-control form-control-lg" name="">
+                  <option value="gram">Grams</option>
+                  <option value="kilogram">Kilograms</option>
+                  <option value="ounce">Ounces</option>
+                  <option value="pound">Pounds</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="output">
+          <div id="card-gram" class="card bg-primary mb-2 p-3">
+            <div class="card-block">
+              <h4>Grams: </h4>
+              <div id="gram" class="outputDiv"></div>
+            </div>
+          </div>
+          <div id="card-kilogram" class="card bg-warning mb-2 p-3">
+            <div class="card-block">
+              <h4>Kilograms: </h4>
+              <div id="kilogram" class="outputDiv"></div>
+            </div>
+          </div>
+          <div id="card-ounce" class="card bg-danger mb-2 p-3">
+            <div class="card-block">
+              <h4>Ounces: </h4>
+              <div id="ounce" class="outputDiv"></div>
+            </div>
+          </div>
+          <div id="card-pound" class="card bg-success mb-2 p-3">
+            <div class="card-block">
+              <h4>Pounds: </h4>
+              <div id="pound" class="outputDiv"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
